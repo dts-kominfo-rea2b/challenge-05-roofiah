@@ -10,7 +10,7 @@ const sorter = (names, callbackSort) => {
   const callbackSortResult = callbackSort(names);
   const result = []
   for (let n = 0; n < callbackSortResult.length; n++) {
-    result.push(`${n + 1}.${callbackSortResult[n]}`)
+    result.push(`${n + 1}. ${callbackSortResult[n]}`)
   }
   return result
 };
@@ -24,7 +24,7 @@ const sortAscending = (names) => {
 // TODO: Fungsi untuk mengurutkan array of string secara descending
 // mengembalikan array yang sudah diurutkan
 const sortDescending = (names) => {
-  return names.reverse()
+  return names.reverse();
 };
 
 // ! JANGAN DIMODIFIKASI
